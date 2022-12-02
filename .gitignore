@@ -1,0 +1,12 @@
+/node_modules
+/public/hot
+/public/storage
+/public/js
+/storage/*.key
+/vendor
+/.idea
+/.vscode
+.phpstorm.meta.php 
+_ide_helper.php
+.phpintel/*
+.env

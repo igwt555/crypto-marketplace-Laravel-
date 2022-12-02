@@ -1,0 +1,198 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box !important;
+}
+
+a, a:active, a:hover {
+    color: initial;
+    text-decoration: none;
+}
+
+:root {
+    --darkColor: #2A3344;
+    --lightColor: #4A5567;
+    --darkGray: darkgray;
+}
+
+body {
+    /* background-color: var(--darkColor); */
+    /* color: #fff !important; */
+    background-color: transparent!important;
+    color : rgb(113, 128, 150)!important;
+}
+
+.bg-dark {
+    background-color: #263A53 !important;
+}
+
+.bg-dark-l {
+    background-color: var(--lightColor) !important;
+}
+
+.bg-darkgray {
+    background-color: var(--darkGray);
+}
+
+.bt-bot-l {
+    border-bottom: 1.5px solid lightgray !important;
+}
+
+.card {
+    /* background-color: var(--lightColor); */
+}
+
+.text-black {
+    color: black !important;
+}
+
+input::placeholder {
+    color: #ddd !important;
+}
+
+
+
+.bg-dark-l hr {
+    background: #fff !important;
+}
+
+.nav-tabs .nav-link {
+    /*background: var(--lightColor);*/
+    /*color: #fff;*/
+    /*border-radius: 0%;*/
+    color: rgb(113, 128, 150)!important;;
+
+    border-bottom: 1px solid rgb(113, 128, 150);
+}
+
+.bg-dark select {
+    background: var(--lightColor) !important;
+    color: white !important;
+}
+
+.bg-dark select:focus {
+    box-shadow: none !important;
+}
+
+/*th, td {
+    color: white!important;
+}
+*/
+
+/******* Deposit Page Style ******/
+input#address::placeholder {
+            color: #495057!important;
+            opacity: 1; /* Firefox */
+            font-style: italic!important;
+            /*font-size: 16px;*/
+}
+
+/******* Exchange Page Style ***********/
+.exchange-panel{
+    /*background: white;*/
+    border-radius: 10px;
+    padding: 10px 0px;
+}
+.exchange-balance{
+    border-right: 1px solid #495057!important;
+}
+
+nav li a{
+    color : rgb(113, 128, 150)!important;
+}
+nav li a:hover{
+    color : white!important;
+}
+
+.text-dark {
+    color: rgb(113, 128, 150)!important;
+}
+a.text-dark:hover{
+    color: white!important;
+}
+
+
+/* ****** ToolTip ******* */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible!important;
+  }
+
+  .log-off-btn:hover{
+      color: rgb(226, 24, 24);
+  }
+
+  #v-pills-tab .active{
+    border: 2px solid #7f9cf5;
+  }
+
+  .space-around{    
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+  }
+
+  input::placeholder {
+    color: white!important;
+    font-style: italic;
+  }
+
+  ::-webkit-input-placeholder  { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white!important;
+  }
+  
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: white!important;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: white!important;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: white!important;
+  }
+
+  hr{
+    border-color: #7180964f;
+  }
+
+  .form-control-sm{
+    padding: 0px;
+    height: 25px;
+    font-size: 14px;
+    margin: 0px!important;
+  }
+
+  .me-msg{
+    /*background-color: rgb(135,116,225)!important;*/
+    background-color: #393060;
+    color: white;
+    margin-left: 30px;
+  }
+  .other-msg{
+    background-color: #2d3748;
+    color: #a0aebc;
+    margin-right: 30px;
+  }

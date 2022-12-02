@@ -1,0 +1,50 @@
+# Run this node on the Bitcoin Test Network.
+#testnet=1
+
+# [rpc]
+# Accept command line and JSON-RPC commands.
+server=1
+
+# Accept public REST requests.
+rest=1
+
+# Specify a non-default location to store blockchain and other data.
+datadir=/disk1/Data/BitcoinFullNode/data
+
+
+# Bind to given address to listen for JSON-RPC connections. This option is ignored unless -rpcallowip is also passed. Port is optional and overrides -rpcport. Use [host]:port notation for IPv6. This option can be specified multiple times. (default: 127.0.0.1 and ::1 i.e., localhost, or if -rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)
+#rpcbind=127.0.0.1
+
+# Username for JSON-RPC connections
+rpcuser=marketbitcoin
+
+# Password for JSON-RPC connections
+rpcpassword=123
+
+# Listen for JSON-RPC connections on this port
+rpcport=8332
+
+# Allow JSON-RPC connections from specified source. Valid for <ip> are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times.
+rpcallowip=127.0.0.1
+
+# it is same like webhook (i.e walletnotify=/home/ec2-user/webhook.sh %s)
+#walletnotify=<path for shell script> %s
+
+
+# by setting this prune option, the daemon will not download the entire node
+#prune=2000
+
+# Setup transaction fee#
+#paytxfee=0.001
+
+# Setup Maximum transaction fee
+#maxtxfee=0.002
+
+[main]
+rpcbind=127.0.0.1
+rpcport=8332
+
+assumevalid=0
+#txindex=1
+debug=net
+daemon=1

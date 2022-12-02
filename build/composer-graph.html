@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>laravel/laravel@dev-master - Graph of Dependencies
+<br><small><small>Flags: dev / lib-version</small></small></title>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <script src="https://unpkg.com/mermaid@8.6.0/dist/mermaid.js"></script>
+</head>
+<body>
+<h1>laravel/laravel@dev-master - Graph of Dependencies
+<br><small><small>Flags: dev / lib-version</small></small></h1><hr>
+    <div class="mermaid" style="margin-top:20px;">graph LR;
+    barryvdh__laravel_ide_helper-->barryvdh__reflection_docblock;
+    barryvdh__laravel_ide_helper-->composer__pcre;
+    doctrine__dbal-->doctrine__cache;
+    doctrine__dbal-->doctrine__deprecations;
+    doctrine__dbal-->doctrine__event_manager;
+    barryvdh__laravel_ide_helper-->doctrine__dbal;
+    barryvdh__laravel_ide_helper-->illuminate__console;
+    barryvdh__laravel_ide_helper-->illuminate__filesystem;
+    barryvdh__laravel_ide_helper-->illuminate__support;
+    barryvdh__laravel_ide_helper-->nikic__php_parser;
+    phpdocumentor__type_resolver-->phpdocumentor__reflection_common;
+    barryvdh__laravel_ide_helper-->phpdocumentor__type_resolver;
+    laravel__laravel ==> barryvdh__laravel_ide_helper;
+    defuse__php_encryption-->paragonie__random_compat;
+    laravel__laravel ==> defuse__php_encryption;
+    laravel__laravel ==> doctrine__dbal;
+    elastic__transport-->php_http__discovery;
+    php_http__httplug-->php_http__promise;
+    psr__http_client-->psr__http_message;
+    php_http__httplug-->psr__http_client;
+    php_http__httplug-->psr__http_message;
+    elastic__transport-->php_http__httplug;
+    elastic__transport-->psr__http_client;
+    psr__http_factory-->psr__http_message;
+    elastic__transport-->psr__http_factory;
+    elastic__transport-->psr__http_message;
+    elastic__transport-->psr__log;
+    elasticsearch__elasticsearch-->elastic__transport;
+    guzzlehttp__guzzle-->guzzlehttp__promises;
+    guzzlehttp__psr7-->psr__http_factory;
+    guzzlehttp__psr7-->psr__http_message;
+    guzzlehttp__psr7-->ralouphie__getallheaders;
+    guzzlehttp__guzzle-->guzzlehttp__psr7;
+    guzzlehttp__guzzle-->psr__http_client;
+    guzzlehttp__guzzle-->symfony__deprecation_contracts;
+    elasticsearch__elasticsearch-->guzzlehttp__guzzle;
+    elasticsearch__elasticsearch-->psr__http_client;
+    elasticsearch__elasticsearch-->psr__http_message;
+    elasticsearch__elasticsearch-->psr__log;
+    laravel__laravel ==> elasticsearch__elasticsearch;
+    fideloper__proxy-->illuminate__contracts;
+    laravel__laravel ==> fideloper__proxy;
+    laravel__laravel ==> fzaninotto__faker;
+    graham_campbell__markdown-->illuminate__contracts;
+    graham_campbell__markdown-->illuminate__filesystem;
+    graham_campbell__markdown-->illuminate__support;
+    graham_campbell__markdown-->illuminate__view;
+    graham_campbell__markdown-->league__commonmark;
+    laravel__laravel ==> graham_campbell__markdown;
+    symfony__finder-->symfony__deprecation_contracts;
+    symfony__finder-->symfony__polyfill_php80;
+    gregwar__captcha-->symfony__finder;
+    laravel__laravel ==> gregwar__captcha;
+    laravel__laravel ==> illuminate__contracts;
+    krowinski__one_click_captcha-->imagine__imagine;
+    laravel__laravel ==> krowinski__one_click_captcha;
+    laravel__framework-->doctrine__inflector;
+    webmozart__assert-->symfony__polyfill_ctype;
+    dragonmantank__cron_expression-->webmozart__assert;
+    laravel__framework-->dragonmantank__cron_expression;
+    egulias__email_validator-->doctrine__lexer;
+    symfony__polyfill_intl_idn-->symfony__polyfill_intl_normalizer;
+    symfony__polyfill_intl_idn-->symfony__polyfill_php72;
+    egulias__email_validator-->symfony__polyfill_intl_idn;
+    laravel__framework-->egulias__email_validator;
+    laravel__framework-->laravel__serializable_closure;
+    laravel__framework-->league__commonmark;
+    league__flysystem-->league__mime_type_detection;
+    laravel__framework-->league__flysystem;
+    monolog__monolog-->psr__log;
+    laravel__framework-->monolog__monolog;
+    nesbot__carbon-->symfony__polyfill_mbstring;
+    nesbot__carbon-->symfony__polyfill_php80;
+    symfony__translation-->symfony__polyfill_mbstring;
+    symfony__translation-->symfony__translation_contracts;
+    nesbot__carbon-->symfony__translation;
+    laravel__framework-->nesbot__carbon;
+    laravel__framework-->opis__closure;
+    laravel__framework-->psr__container;
+    laravel__framework-->psr__log;
+    laravel__framework-->psr__simple_cache;
+    ramsey__uuid-->brick__math;
+    ramsey__collection-->symfony__polyfill_php81;
+    ramsey__uuid-->ramsey__collection;
+    laravel__framework-->ramsey__uuid;
+    swiftmailer__swiftmailer-->egulias__email_validator;
+    swiftmailer__swiftmailer-->symfony__polyfill_iconv;
+    swiftmailer__swiftmailer-->symfony__polyfill_intl_idn;
+    swiftmailer__swiftmailer-->symfony__polyfill_mbstring;
+    laravel__framework-->swiftmailer__swiftmailer;
+    symfony__console-->symfony__deprecation_contracts;
+    symfony__console-->symfony__polyfill_mbstring;
+    symfony__console-->symfony__polyfill_php73;
+    symfony__console-->symfony__polyfill_php80;
+    symfony__service_contracts-->psr__container;
+    symfony__service_contracts-->symfony__deprecation_contracts;
+    symfony__console-->symfony__service_contracts;
+    symfony__string-->symfony__polyfill_ctype;
+    symfony__string-->symfony__polyfill_intl_g_rapheme;
+    symfony__string-->symfony__polyfill_intl_normalizer;
+    symfony__string-->symfony__polyfill_mbstring;
+    symfony__console-->symfony__string;
+    laravel__framework-->symfony__console;
+    symfony__error_handler-->psr__log;
+    symfony__var_dumper-->symfony__polyfill_mbstring;
+    symfony__var_dumper-->symfony__polyfill_php80;
+    symfony__error_handler-->symfony__var_dumper;
+    laravel__framework-->symfony__error_handler;
+    laravel__framework-->symfony__finder;
+    symfony__http_foundation-->symfony__deprecation_contracts;
+    symfony__http_foundation-->symfony__polyfill_mbstring;
+    symfony__http_foundation-->symfony__polyfill_php80;
+    laravel__framework-->symfony__http_foundation;
+    symfony__http_kernel-->psr__log;
+    symfony__http_kernel-->symfony__deprecation_contracts;
+    symfony__http_kernel-->symfony__error_handler;
+    symfony__event_dispatcher_contracts-->psr__event_dispatcher;
+    symfony__event_dispatcher-->symfony__event_dispatcher_contracts;
+    symfony__http_kernel-->symfony__event_dispatcher;
+    symfony__http_kernel-->symfony__http_foundation;
+    symfony__http_kernel-->symfony__polyfill_ctype;
+    symfony__http_kernel-->symfony__polyfill_php73;
+    symfony__http_kernel-->symfony__polyfill_php80;
+    laravel__framework-->symfony__http_kernel;
+    symfony__mime-->symfony__deprecation_contracts;
+    symfony__mime-->symfony__polyfill_intl_idn;
+    symfony__mime-->symfony__polyfill_mbstring;
+    symfony__mime-->symfony__polyfill_php80;
+    laravel__framework-->symfony__mime;
+    symfony__process-->symfony__polyfill_php80;
+    laravel__framework-->symfony__process;
+    symfony__routing-->symfony__deprecation_contracts;
+    symfony__routing-->symfony__polyfill_php80;
+    laravel__framework-->symfony__routing;
+    laravel__framework-->symfony__var_dumper;
+    tijsverkoyen__css_to_inline_styles-->symfony__css_selector;
+    laravel__framework-->tijsverkoyen__css_to_inline_styles;
+    graham_campbell__result_type-->phpoption__phpoption;
+    vlucas__phpdotenv-->graham_campbell__result_type;
+    vlucas__phpdotenv-->phpoption__phpoption;
+    vlucas__phpdotenv-->symfony__polyfill_ctype;
+    vlucas__phpdotenv-->symfony__polyfill_mbstring;
+    vlucas__phpdotenv-->symfony__polyfill_php80;
+    laravel__framework-->vlucas__phpdotenv;
+    laravel__framework-->voku__portable_ascii;
+    laravel__laravel ==> laravel__framework;
+    laravel__tinker-->illuminate__console;
+    laravel__tinker-->illuminate__contracts;
+    laravel__tinker-->illuminate__support;
+    psy__psysh-->nikic__php_parser;
+    psy__psysh-->symfony__console;
+    psy__psysh-->symfony__var_dumper;
+    laravel__tinker-->psy__psysh;
+    laravel__tinker-->symfony__var_dumper;
+    laravel__laravel ==> laravel__tinker;
+    laravel__laravel ==> nwidart__laravel_modules;
+    paragonie__sodium_compat-->paragonie__random_compat;
+    laravel__laravel ==> paragonie__sodium_compat;
+    laravel__laravel ==> phpseclib__phpseclib;
+    laravel__laravel ==> predis__predis;
+    singpolyma__openpgp_php-->phpseclib__phpseclib;
+    laravel__laravel ==> singpolyma__openpgp_php;
+    symfony__intl-->symfony__polyfill_intl_icu;
+    symfony__intl-->symfony__polyfill_php80;
+    laravel__laravel ==> symfony__intl;
+    laravel__scout-->illuminate__bus;
+    laravel__scout-->illuminate__contracts;
+    laravel__scout-->illuminate__database;
+    laravel__scout-->illuminate__http;
+    laravel__scout-->illuminate__pagination;
+    laravel__scout-->illuminate__queue;
+    laravel__scout-->illuminate__support;
+    qyom__laravel_scout_elastic-->laravel__scout;
+    laravel__laravel ==> qyom__laravel_scout_elastic;
+    laravel__laravel ==> webpatser__laravel_uuid;
+    filp__whoops-->psr__log;
+    laravel__laravel ==> filp__whoops;
+    mockery__mockery-->hamcrest__hamcrest_php;
+    laravel__laravel ==> mockery__mockery;
+    nunomaduro__collision-->facade__ignition_contracts;
+    nunomaduro__collision-->filp__whoops;
+    nunomaduro__collision-->symfony__console;
+    laravel__laravel ==> nunomaduro__collision;
+    phpunit__phpunit-->doctrine__instantiator;
+    phpunit__phpunit-->myclabs__deep_copy;
+    phar_io__manifest-->phar_io__version;
+    phpunit__phpunit-->phar_io__manifest;
+    phpunit__phpunit-->phar_io__version;
+    phpspec__prophecy-->doctrine__instantiator;
+    phpdocumentor__reflection_docblock-->phpdocumentor__reflection_common;
+    phpdocumentor__reflection_docblock-->phpdocumentor__type_resolver;
+    phpdocumentor__reflection_docblock-->webmozart__assert;
+    phpspec__prophecy-->phpdocumentor__reflection_docblock;
+    sebastian__comparator-->sebastian__diff;
+    sebastian__exporter-->sebastian__recursion_context;
+    sebastian__comparator-->sebastian__exporter;
+    phpspec__prophecy-->sebastian__comparator;
+    phpspec__prophecy-->sebastian__recursion_context;
+    phpunit__phpunit-->phpspec__prophecy;
+    phpunit__php_code_coverage-->nikic__php_parser;
+    phpunit__php_code_coverage-->phpunit__php_file_iterator;
+    phpunit__php_code_coverage-->phpunit__php_text_template;
+    phpunit__php_code_coverage-->sebastian__code_unit_reverse_lookup;
+    sebastian__complexity-->nikic__php_parser;
+    phpunit__php_code_coverage-->sebastian__complexity;
+    phpunit__php_code_coverage-->sebastian__environment;
+    sebastian__lines_of_code-->nikic__php_parser;
+    phpunit__php_code_coverage-->sebastian__lines_of_code;
+    phpunit__php_code_coverage-->sebastian__version;
+    phpunit__php_code_coverage-->theseer__tokenizer;
+    phpunit__phpunit-->phpunit__php_code_coverage;
+    phpunit__phpunit-->phpunit__php_file_iterator;
+    phpunit__phpunit-->phpunit__php_invoker;
+    phpunit__phpunit-->phpunit__php_text_template;
+    phpunit__phpunit-->phpunit__php_timer;
+    phpunit__phpunit-->sebastian__cli_parser;
+    phpunit__phpunit-->sebastian__code_unit;
+    phpunit__phpunit-->sebastian__comparator;
+    phpunit__phpunit-->sebastian__diff;
+    phpunit__phpunit-->sebastian__environment;
+    phpunit__phpunit-->sebastian__exporter;
+    sebastian__global_state-->sebastian__object_reflector;
+    sebastian__global_state-->sebastian__recursion_context;
+    phpunit__phpunit-->sebastian__global_state;
+    sebastian__object_enumerator-->sebastian__object_reflector;
+    sebastian__object_enumerator-->sebastian__recursion_context;
+    phpunit__phpunit-->sebastian__object_enumerator;
+    phpunit__phpunit-->sebastian__resource_operations;
+    phpunit__phpunit-->sebastian__type;
+    phpunit__phpunit-->sebastian__version;
+    laravel__laravel ==> phpunit__phpunit;
+
+    subgraph "Your Package"
+        laravel__laravel("laravel/laravel@dev-master");
+    end
+    subgraph "Required"
+        barryvdh__laravel_ide_helper("barryvdh/laravel-ide-helper@v2.12.3");
+        barryvdh__reflection_docblock("barryvdh/reflection-docblock@v2.0.6");
+        composer__pcre("composer/pcre@3.0.0");
+        doctrine__dbal("doctrine/dbal@2.13.9");
+        doctrine__cache("doctrine/cache@2.2.0");
+        doctrine__deprecations("doctrine/deprecations@v1.0.0");
+        doctrine__event_manager("doctrine/event-manager@1.1.1");
+        illuminate__console(["* illuminate/console"]);
+        illuminate__filesystem(["* illuminate/filesystem"]);
+        illuminate__support(["* illuminate/support"]);
+        nikic__php_parser("nikic/php-parser@v4.13.2");
+        phpdocumentor__type_resolver("phpdocumentor/type-resolver@1.6.1");
+        phpdocumentor__reflection_common("phpdocumentor/reflection-common@2.2.0");
+        defuse__php_encryption("defuse/php-encryption@v2.3.1");
+        paragonie__random_compat("paragonie/random_compat@v9.99.100");
+        elastic__transport("elastic/transport@v8.1.0");
+        php_http__discovery("php-http/discovery@1.14.2");
+        php_http__httplug("php-http/httplug@2.3.0");
+        php_http__promise("php-http/promise@1.1.0");
+        psr__http_client("psr/http-client@1.0.1");
+        psr__http_message("psr/http-message@1.0.1");
+        psr__http_factory("psr/http-factory@1.0.1");
+        psr__log("psr/log@2.0.0");
+        elasticsearch__elasticsearch("elasticsearch/elasticsearch@v8.2.2");
+        guzzlehttp__guzzle("guzzlehttp/guzzle@7.4.3");
+        guzzlehttp__promises("guzzlehttp/promises@1.5.1");
+        guzzlehttp__psr7("guzzlehttp/psr7@2.2.1");
+        ralouphie__getallheaders("ralouphie/getallheaders@3.0.3");
+        symfony__deprecation_contracts("symfony/deprecation-contracts@v3.0.1");
+        fideloper__proxy("fideloper/proxy@4.4.1");
+        illuminate__contracts(["* illuminate/contracts"]);
+        fzaninotto__faker("fzaninotto/faker@1.9-dev");
+        graham_campbell__markdown("graham-campbell/markdown@v13.1.2");
+        illuminate__view(["* illuminate/view"]);
+        league__commonmark("league/commonmark@1.6.7");
+        symfony__finder("symfony/finder@v5.4.8");
+        symfony__polyfill_php80("symfony/polyfill-php80@v1.25.0");
+        gregwar__captcha("gregwar/captcha@v1.1.9");
+        krowinski__one_click_captcha("krowinski/one-click-captcha@2.0");
+        imagine__imagine("imagine/imagine@v0.7.1");
+        laravel__framework("laravel/framework@v8.83.14");
+        doctrine__inflector("doctrine/inflector@2.0.4");
+        webmozart__assert("webmozart/assert@1.10.0");
+        symfony__polyfill_ctype("symfony/polyfill-ctype@v1.25.0");
+        dragonmantank__cron_expression("dragonmantank/cron-expression@v3.3.1");
+        egulias__email_validator("egulias/email-validator@2.1.25");
+        doctrine__lexer("doctrine/lexer@1.2.3");
+        symfony__polyfill_intl_idn("symfony/polyfill-intl-idn@v1.25.0");
+        symfony__polyfill_intl_normalizer("symfony/polyfill-intl-normalizer@v1.25.0");
+        symfony__polyfill_php72("symfony/polyfill-php72@v1.25.0");
+        laravel__serializable_closure("laravel/serializable-closure@v1.2.0");
+        league__flysystem("league/flysystem@1.1.9");
+        league__mime_type_detection("league/mime-type-detection@1.11.0");
+        monolog__monolog("monolog/monolog@2.6.0");
+        nesbot__carbon("nesbot/carbon@2.58.0");
+        symfony__polyfill_mbstring("symfony/polyfill-mbstring@v1.25.0");
+        symfony__translation("symfony/translation@v6.0.8");
+        symfony__translation_contracts("symfony/translation-contracts@v3.0.1");
+        opis__closure("opis/closure@3.6.3");
+        psr__container("psr/container@1.1.2");
+        psr__simple_cache("psr/simple-cache@1.0.1");
+        ramsey__uuid("ramsey/uuid@4.3.1");
+        brick__math("brick/math@0.9.3");
+        ramsey__collection("ramsey/collection@1.2.2");
+        symfony__polyfill_php81("symfony/polyfill-php81@v1.25.0");
+        swiftmailer__swiftmailer("swiftmailer/swiftmailer@v6.3.0");
+        symfony__polyfill_iconv("symfony/polyfill-iconv@v1.25.0");
+        symfony__console("symfony/console@v5.4.8");
+        symfony__polyfill_php73("symfony/polyfill-php73@v1.25.0");
+        symfony__service_contracts("symfony/service-contracts@v2.5.1");
+        symfony__string("symfony/string@v6.0.8");
+        symfony__polyfill_intl_g_rapheme("symfony/polyfill-intl-grapheme@v1.25.0");
+        symfony__error_handler("symfony/error-handler@v5.4.8");
+        symfony__var_dumper("symfony/var-dumper@v5.4.8");
+        symfony__http_foundation("symfony/http-foundation@v5.4.8");
+        symfony__http_kernel("symfony/http-kernel@v5.4.8");
+        symfony__event_dispatcher_contracts("symfony/event-dispatcher-contracts@v3.0.1");
+        psr__event_dispatcher("psr/event-dispatcher@1.0.0");
+        symfony__event_dispatcher("symfony/event-dispatcher@v6.0.3");
+        symfony__mime("symfony/mime@v5.4.8");
+        symfony__process("symfony/process@v5.4.8");
+        symfony__routing("symfony/routing@v5.4.8");
+        tijsverkoyen__css_to_inline_styles("tijsverkoyen/css-to-inline-styles@2.2.4");
+        symfony__css_selector("symfony/css-selector@v6.0.3");
+        graham_campbell__result_type("graham-campbell/result-type@v1.0.4");
+        phpoption__phpoption("phpoption/phpoption@1.8.1");
+        vlucas__phpdotenv("vlucas/phpdotenv@v5.4.1");
+        voku__portable_ascii("voku/portable-ascii@1.6.1");
+        laravel__tinker("laravel/tinker@v2.7.2");
+        psy__psysh("psy/psysh@v0.11.4");
+        nwidart__laravel_modules("nwidart/laravel-modules@9.0.1");
+        paragonie__sodium_compat("paragonie/sodium_compat@v1.17.1");
+        phpseclib__phpseclib("phpseclib/phpseclib@2.0.37");
+        predis__predis("predis/predis@v1.1.10");
+        singpolyma__openpgp_php("singpolyma/openpgp-php@0.5.0");
+        symfony__intl("symfony/intl@v4.4.41");
+        symfony__polyfill_intl_icu("symfony/polyfill-intl-icu@v1.25.0");
+        laravel__scout("laravel/scout@v9.4.9");
+        illuminate__bus(["* illuminate/bus"]);
+        illuminate__database(["* illuminate/database"]);
+        illuminate__http(["* illuminate/http"]);
+        illuminate__pagination(["* illuminate/pagination"]);
+        illuminate__queue(["* illuminate/queue"]);
+        qyom__laravel_scout_elastic("qyom/laravel-scout-elastic@dev-master");
+        webpatser__laravel_uuid("webpatser/laravel-uuid@4.0.1");
+        filp__whoops("filp/whoops@2.14.5");
+        mockery__mockery("mockery/mockery@1.5.0");
+        phpunit__phpunit("phpunit/phpunit@9.5.20");
+    end
+    subgraph "Required Dev"
+        hamcrest__hamcrest_php("hamcrest/hamcrest-php@v2.0.1");
+        nunomaduro__collision("nunomaduro/collision@v5.11.0");
+        facade__ignition_contracts("facade/ignition-contracts@1.0.2");
+        doctrine__instantiator("doctrine/instantiator@1.4.1");
+        myclabs__deep_copy("myclabs/deep-copy@1.11.0");
+        phar_io__manifest("phar-io/manifest@2.0.3");
+        phar_io__version("phar-io/version@3.2.1");
+        phpspec__prophecy("phpspec/prophecy@v1.15.0");
+        phpdocumentor__reflection_docblock("phpdocumentor/reflection-docblock@5.3.0");
+        sebastian__comparator("sebastian/comparator@4.0.6");
+        sebastian__diff("sebastian/diff@4.0.4");
+        sebastian__exporter("sebastian/exporter@4.0.4");
+        sebastian__recursion_context("sebastian/recursion-context@4.0.4");
+        phpunit__php_code_coverage("phpunit/php-code-coverage@9.2.15");
+        phpunit__php_file_iterator("phpunit/php-file-iterator@3.0.6");
+        phpunit__php_text_template("phpunit/php-text-template@2.0.4");
+        sebastian__code_unit_reverse_lookup("sebastian/code-unit-reverse-lookup@2.0.3");
+        sebastian__complexity("sebastian/complexity@2.0.2");
+        sebastian__environment("sebastian/environment@5.1.4");
+        sebastian__lines_of_code("sebastian/lines-of-code@1.0.3");
+        sebastian__version("sebastian/version@3.0.2");
+        theseer__tokenizer("theseer/tokenizer@1.2.1");
+        phpunit__php_invoker("phpunit/php-invoker@3.1.1");
+        phpunit__php_timer("phpunit/php-timer@5.0.3");
+        sebastian__cli_parser("sebastian/cli-parser@1.0.1");
+        sebastian__code_unit("sebastian/code-unit@1.0.8");
+        sebastian__global_state("sebastian/global-state@5.0.5");
+        sebastian__object_reflector("sebastian/object-reflector@2.0.4");
+        sebastian__object_enumerator("sebastian/object-enumerator@4.0.4");
+        sebastian__resource_operations("sebastian/resource-operations@3.0.3");
+        sebastian__type("sebastian/type@3.0.0");
+    end</div>
+
+<input type="button" class="btn btn-primary" id="zoom" value="Zoom In">
+                <script>
+                     mermaid.initialize({
+    "startOnLoad": true,
+    "theme": "forest",
+    "themeCSS": ".edgePath .path:hover {stroke-width:4px; cursor:pointer}\n.edgeLabel {border-radius:4px}\n.label {font-family:Source Sans Pro,Helvetica Neue,Arial,sans-serif;}",
+    "maxTextSize": 1000000,
+    "loglevel": "debug",
+    "securityLevel": "loose",
+    "arrowMarkerAbsolute": true,
+    "flowchart": {
+        "htmlLabels": true,
+        "useMaxWidth": true,
+        "diagramPadding": 12,
+        "curve": "basis"
+    }
+});
+                     $(function () {
+                        $('#zoom').click(() => {
+                            $('.mermaid').removeAttr('data-processed');
+                            $('.mermaid').width($('.mermaid svg').css('max-width'));
+                        });
+                     });
+                </script>
+<script>
+                $(document).on("click", "path", e => {
+                    e.currentTarget.style.stroke = e.currentTarget.style.stroke ? "" : "red";
+                });
+            </script>
+</body>
+</html>
